@@ -86,3 +86,39 @@ span{
     color: #ffffff;
 font-weight: 400;
 }
+/* Responsive adjustments: keep desktop layout unchanged, adapt for smaller viewports */
+@media (max-width: 900px) {
+    .main{
+        left: auto;
+        top: 40px;
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .main{
+        width: 90vw;
+        max-width: 320px;
+        height: auto;
+        left: auto;
+        top: 30px;
+        margin: 30px auto;
+        padding-bottom: 18px;
+    }
+    .img1{
+        width: calc(100% - 46px);
+        height: auto;
+        left: 0;
+        top: 12px;
+        margin: 0 23px;
+    }
+    .container1{
+        left: 12px;
+        top: 14px;
+    }
+    .box2{font-size:15px;line-height:20px}
+    .container2{top:12px;padding:0 18px;gap:8px}
+    hr{width:90%;top:18px;margin:12px auto}
+    .img4{width:44px;top:12px;left:6px;border-width:2px}
+    section{left:72px;top:-10px}
+}
